@@ -1,0 +1,115 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--text-main-color);
+  margin-top: 150px;
+  gap: 40px;
+}
+
+.articles .items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.articles .items .item {
+  width: calc(100% / 3 - 40px);
+  height: 461px;
+  background: #ffffff2a;
+  border-radius: 21px;
+  position: relative;
+  transition: background 0.3s 0.1s ease ;
+}
+.item .image{
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+}
+.item .image img{
+    border-radius: 20px;
+  }
+.articles .items .item:hover {
+  background: var(--item-purple-color);
+}
+.item .content {
+  padding: 20px;
+  width: 100%;
+}
+.item .content h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.item .content p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: justify;
+  font-weight: 200;
+}
+.item span {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: #00000099;
+  width: 120px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+.item button {
+  width: 40px;
+  height: 40px;
+  background: var(--item-purple-color);
+  border-radius: 10px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff2a;
+  cursor: pointer;
+  transition: background 0.3s 0.1s ease ,transform 0.3s 0.1s ease;
+
+}
+.articles .items .item:hover.item button{
+    background: var(--text-main-color);
+    color: var(--item-purple-color);
+    transform: rotate(90deg);
+    right: 47%;
+ 
+  }
+.articles .h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+@media (max-width: 850px) {
+  .articles .items {
+    justify-content: center;
+ 
+  }
+  .articles .items .item {
+    width: calc(100% / 2 - 20px);
+    margin-top: 20px;
+  
+  }
+}
+@media (max-width: 600px) {
+  .articles .items .item {
+    width: calc(100% / 1);
+    margin-top: 20px;
+  
+  }  .articles .items {
+    justify-content: center;
+ 
+  }
+}

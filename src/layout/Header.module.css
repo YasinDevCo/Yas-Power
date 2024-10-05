@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  color: var(--text-main-color);
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+header div {
+  display: flex;
+  gap: 25px;
+}
+header div ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  align-items: center;
+}
+header div ul li {
+  font-size: 1.1rem;
+  text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.389);
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+header div ul li:hover {
+  color: var(--text-purple-color);
+  transform: scale(1.1);
+  text-shadow: 0px 2px 10px rgba(115, 131, 255, 0.389);
+}
+header .btnDesk {
+  background: var(--text-purple-color);
+  width: 150px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition:  box-shadow 0.3s ease;
+}
+header .btnTablet {
+  transition:  transform 0.3s ease;
+  display: none;
+}
+header .btnDesk:hover {
+    box-shadow: 0 0 20px rgba(200, 200, 200, 0.159);
+  }
+header .btnTablet:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 850px) {
+  header .btnTablet {
+    display: flex;
+  }
+  header .btnDesk {
+    display: none;
+  }
+  header div ul {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+}

@@ -1,0 +1,67 @@
+:root {
+  --bg-main-color: #060b25;
+  --text-main-color: #ffffff;
+  --item-purple-color: #6f4efd;
+  --text-purple-color: #6f4efd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #060b25;
+  background-image: url(./assets/line.svg) ;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size:1500px ;
+  
+
+  font-family: Vazirmatn;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 0 35px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+  }
+}
